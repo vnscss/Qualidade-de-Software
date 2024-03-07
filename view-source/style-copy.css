@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'app';
+    grid-template-rows: 15vh 85vh;
+    grid-template-columns: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    row-gap: 40px   ;
+    background-color: #222222;
+    
+}
+
+body::-webkit-scrollbar {
+    width: 8px; 
+    height: 8px;
+             /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #222222;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(20, 20, 24);   /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: none; /* creates padding around scroll thumb */
+  }
+
+  body::-webkit-scrollbar-corner{
+    background-color: rgb(28, 29, 33);
+  }
+
+.header{
+    grid-area: header;
+    background: rgb(49,11,84);
+    background: linear-gradient(90deg, rgba(49,11,84,1) 0%, rgba(112,18,201,1) 83%);
+    display: grid;
+    grid-template-columns: 840px 80px 80px 100px;
+    column-gap: 25px;
+    align-items: center;
+}
+
+.header a{
+    border: none;
+    background-color: #222222;
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+    transition: 300ms;
+    text-align: center;
+    padding-top: 13px;
+    text-decoration: none;
+}
+
+.header a:hover{
+    transform: scale(1.1);
+}
+
+.headerTxt{
+    width: 270px;
+    margin-left: 60px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #ffffff;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.342);
+}
+
+.headerTxt span img {
+    width: 35px;
+    margin-left: 8px;
+    fill: white;
+}
+
+.headerTxt span{
+    border-radius: 50%;
+}
+
+.app{
+    grid-area: app;
+    background-color: #222222;
+    color: white;
+    display: grid;
+    grid-template-areas: 
+    'text img'
+    'button button';
+    grid-template-columns: 700px auto;
+}
+
+.appText{
+    grid-area: text;
+    margin: 30px;
+    text-align: justify;
+    margin-top: 90px;
+}
+
+.appText h1{
+    font-size: 35px;
+    transition: 300ms;
+}
+
+.appText h1:hover{
+    color: #7012c9;
+}
+
+.appText p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.appImage{
+    grid-area: img;
+    width: 700px;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeimg{
+    border-radius: 8px;
+    width: 530px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 50px;
+    margin-top: 40px;
+    box-shadow: rgb(0, 0, 0) 0px 5px 40px;
+}
+
+.appButton{
+    grid-area: button;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottone1 {
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-radius: 9px;
+    background: #131313;
+    box-shadow: rgb(0, 0, 0) 0px 5px 10px;
+    border: none;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+    color: white;
+   }
+   
+.bottone1:hover {
+    box-shadow: 0px 5px 56px 5px #7012c9;
+}
+   
+.bottone1:active {
+    transform: scale(0.97);
+    box-shadow: 7px 5px 56px -10px #7012c9;
+}

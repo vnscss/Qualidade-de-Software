@@ -1,0 +1,677 @@
+body{
+    background-color: #0e0e10;
+    color: white;
+    font-family: "Source Sans Pro",sans-serif;
+    width: 100vw;
+    height: 100%;
+    display: inline;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+  }
+*{
+    box-sizing: border-box; 
+}
+.container{
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+.card{
+    width: 100%;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+.card-item{
+    width:  clamp(10%, 400px , 90%);
+    height:  clamp(10%, 450px , 100%);
+    transition: transform 0.2s;  
+}
+
+h1{
+    color: #6241c5;
+}
+
+h2{
+    color: #bf94ff;
+}
+
+.header{
+    width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.qualidadeSoftware{
+    width: 80vw;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-areas: 
+    'art1'
+    'art2';
+}
+
+.qualidadeArtigo1{
+    width: 80vw;
+    height: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    'qualidadeArtigo1h1 qualidadeArtigo1img'
+    'qualidadeArtigo1p qualidadeArtigo1img'
+    'qualidadeButton qualidadeButton';
+    grid-area: art1;
+}
+
+.qualidadeArtigo1 h1{
+    margin: 0px;
+    width: clamp(50%, 700px , 100%);
+    height: 100%;
+    font-size: calc(3vw + 1.5vh + 1vmin);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: qualidadeArtigo1h1;
+}
+
+.qualidadeArtigo1 p{
+    width: clamp(50%, 700px , 85%);
+    font-size: calc(0.4vw + 0.5vh + 1vmin);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: qualidadeArtigo1p;
+    line-height: 1.2em;
+}
+
+.qualidadeSoftwareP{
+    grid-area: qualidadeArtigo1p;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.qualidadeArtigo1 img{
+    width:  clamp(50%, 740px , 90%);
+
+}
+
+.qualidadeSoftwareIMG{
+    grid-area: qualidadeArtigo1img;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.qualidadeButton{
+    height: 200px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.qualidadeArtigo2{
+    width: 80vw;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    font-size: calc(0.4vw + 0.5vh + 1vmin);
+    grid-area: art2;
+}
+
+
+
+.qualidadeArtigo2P{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qualidadeArtigo2 p{
+    width: 80%;
+    line-height: 1.2em;
+    text-align: justify;
+}
+
+.qualidadeArtigo2IMG{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.qualidadeArtigo2IMG img{
+    width:  clamp(10%, 660px , 90%);
+    height: clamp(30%, 416px , 90%);
+}
+
+
+
+.definirRequisitos{
+    width: 80vw;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+
+.definirRequisitosH{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.definirRequisitosH h2{
+    font-size: calc(1vw + 2vh + 1vmin);
+    text-align: center;
+}
+
+.definirRequisitosP{
+    font-size: calc(0.4vw + 0.5vh + 1vmin);
+    text-align: justify;
+}
+.definirRequisitosP p{
+    margin-bottom: 5%;
+    line-height: 1.2em;
+}
+
+.definirRequisitosIMG{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.definirRequisitosIMG img{
+    width:  clamp(10%, 800px , 90%);
+    height: clamp(30%, 416px , 90%);
+}
+
+
+
+.metodologiasDev{
+    width: 80vw;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+
+.metodologiasDevH{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.metodologiasDevH h2{
+    font-size: calc(1vw + 2vh + 1vmin);
+    text-align: center;
+}
+
+.metodologiasDevP{
+    font-size: calc(0.4vw + 0.5vh + 1vmin);
+}
+
+.metodologiasDevP p{
+    margin-bottom: 5%;
+    line-height: 1.2em;
+    text-align: justify;
+}
+
+
+.metodologiasDevIMG img{
+    width:  clamp(10%, 300px , 90%);
+    padding-bottom: 7%;
+}
+
+.metodologiasDevIMG h3{
+    font-size: calc(0.7vw + 1.3vh + 1vmin);
+    margin: 0;
+    padding-top: 7%;
+    padding-bottom: 10%;
+    text-align: center;
+}
+
+.cascata{
+    background-color: #6241c5;
+    width:  clamp(10%, 400px , 90%);
+    height:  clamp(10%, 450px , 100%);
+    text-align: center;
+    border-radius: 20px;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.espiral{
+    background-color: #6241c5;
+    width:  clamp(10%, 400px , 90%);
+    height:  clamp(10%, 450px , 100%);
+    text-align: center;
+    border-radius: 20px;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.agil{
+    background-color: #6241c5;
+    width:  clamp(10%, 400px , 90%);
+    height:  clamp(10%, 450px , 100%);
+    text-align: center;
+    border-radius: 20px;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+
+
+.rigorosoProcesso{
+    width: 80vw;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+
+.rigorosoProcessoH{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rigorosoProcessoH h2{
+    font-size: calc(1vw + 2vh + 1vmin);
+    text-align: center;
+}
+
+.rigorosoProcessoP{
+    font-size: calc(0.4vw + 0.5vh + 1vmin);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    'p1 '
+    'p2 ';
+    grid-area: rigorosoProcessoP;
+}
+
+.p1{
+    grid-area: p1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.p2{
+    grid-area: p2;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.rigorosoProcessoP p{
+    margin-bottom: 5%;
+    line-height: 1.2em;
+    text-align: justify;
+    margin: 0;
+}
+
+.rigorosoProcessoEncaps{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 
+    'rigorosoProcessoIMG rigorosoProcessoP';
+}
+
+.rigorosoProcessoIMG{
+    grid-area: rigorosoProcessoIMG;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.rigorosoProcessoIMG img{
+    width:  clamp(50%, 900px , 90%);
+}
+
+
+.vidaSoftware{
+    width: 80vw;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-areas: 
+    'h1 h1'
+    'p img'
+    'p2 p2';
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto 150px;
+}
+
+.vidaSoftwareH{
+    grid-area: h1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vidaSoftwareH h1{
+    font-size: calc(3vw + 1.5vh + 1vmin);
+    text-align: center;
+}
+
+
+.vidaSoftwareP{
+    grid-area: p;
+}
+
+.vidaSoftwareP p{
+    font-size: calc(0.4vw + 0.5vh + 1vmin);
+    text-align: justify;
+}
+
+.vidaSoftwareIMG{
+    grid-area: img;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vidaSoftwareIMG img{
+    width:  clamp(10%, 660px , 90%);
+}
+
+
+.vidaSoftwareP2{
+    grid-area: p2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vidaSoftwareP2 p{
+    font-size: calc(0.4vw + 0.5vh + 1vmin);
+}
+
+
+.testeSoftware{
+    width: 80vw;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-areas: 
+    'h1 h1 '
+    'img p';
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+}
+
+.testeSoftwareH{
+    grid-area: h1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testeSoftwareH h1{
+    font-size: calc(3vw + 1.5vh + 1vmin);
+    text-align: center;
+}
+
+.testeSoftwareP{
+    grid-area: p;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.testeSoftwareP p{
+    font-size: calc(0.4vw + 0.5vh + 1vmin);
+    text-align: justify;
+    display: flex;
+    align-items: center;
+}
+
+.testeSoftwareIMG{
+    grid-area: img;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testeSoftwareIMG img{
+    width:  clamp(10%, 500px , 90%);
+}
+
+.testCards{
+    display: flex;
+    overflow: scroll;
+}
+
+.testCards h2{
+    color: #6241c5;
+    text-align: initial;
+    margin-left: 5%;
+}
+
+.testCards p{
+    color: black;
+    width: 80%;
+}
+
+.containerP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testUnidade{
+    background-color: white;
+    width:  clamp(70%, 750px , 90%);
+    height:  clamp(10%, 450px , 100%);
+    border-radius: 20px;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+
+.testIntegra{
+    background-color: white;
+    width:  clamp(70%, 750px , 90%);
+    height:  clamp(10%, 450px , 100%);
+    border-radius: 20px;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+
+.testSistema{
+    background-color: white;
+    width:  clamp(70%, 750px , 90%);
+    height:  clamp(10%, 450px , 100%);
+    border-radius: 20px;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+
+.testUser{
+    background-color: white;
+    width:  clamp(70%, 750px , 90%);
+    height:  clamp(10%, 450px , 100%);
+    border-radius: 20px;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.finalP{
+    width: 80vw;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+.finalP p{
+    font-size: calc(0.4vw + 0.5vh + 1vmin);
+    text-align: justify;
+    display: flex;
+    align-items: center;
+}
+
+.rodape{
+    background-color: #1f1f23;
+    margin-bottom: -20px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infosFinais{
+    width: 100vw;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-areas: 
+    'eu source';
+    grid-template-columns: 50% 50%;
+}
+
+.eu{
+    grid-area: eu;
+    display: inline;
+    text-align: center;
+    align-items: center;
+}
+
+.eu p{
+    font-size: calc(0.4vw + 0.5vh + 1vmin);
+}
+
+.eu img{
+    width: 500px;
+    border:6px solid #6241c5;
+    border-radius:100%;
+}
+
+.divDosA{
+    width: 100%;
+}
+
+.divDosA a{
+
+}
+
+.sourceCode{
+    grid-area: source;
+    display: inline;
+    text-align: center;
+    width: 85%;
+}
+
+.sourceCodeH{
+    width: 100%;
+}
+
+.sourceCode h1{
+    text-align: center;
+    font-size: calc(1vw + 1.5vh + 1vmin);
+}
+
+div#container{
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(28, 29, 33);
+    width:  clamp(10%, 725px , 100%);
+    height:  clamp(10%, 400px , 100%);
+}
+
+div#view-source-frame{
+    border-radius: 15px;
+    width:  clamp(10%, 900px , 90%);
+    height:  clamp(10%, 400px , 100%);
+}
+
+div#barra{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+div#botoes{
+    width: 215px;
+    padding-left: 15px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+#botoes button{
+    cursor: pointer;
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: #6241c5;
+    border-radius: 5px;
+    width: 67px;
+    border-style: none;
+}
+
+#botoes button:hover{
+    background-color: #493194;
+}
+
+
+iframe {
+    width:  111%;
+    height:  clamp(10%, 350px , 100%);
+    border-bottom-right-radius: 15px; 
+    border-bottom-left-radius: 15px;
+    border-top: 5px solid #6241c5;
+    margin: 0;
+    padding: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
