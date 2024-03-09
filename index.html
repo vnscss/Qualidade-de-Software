@@ -8,11 +8,15 @@
 </head>
 <body>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./slider/splide-core.min.css">
-    <script src="script.js" defer></script>
-    <script src="./slider/splide.min.js"></script>
 
+    <link rel="stylesheet" href="./slider/splide.min.css">
+    <script src="/slider/splide.min.js"></script>
 
+    <script defer src="./script.js"></script>
+
+    <script src="./scroll.js"></script>
+
+    <section style="height: 50vh;" class="background">
         <div class="qualidadeArtigo1">
             <h1>Qualidade de Software</h1>
     
@@ -24,15 +28,20 @@
             </div>
 
         </div>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </section>
 
 
-        <div class="qualidadeArtigo2">
+
+    <div class="qualidadeArtigo2">
             
             <div class="qualidadeButton">
-                <button class="btn">
+                <button class="btn" onclick="smoothScroll(document.getElementById('scroll'))">
                     Ler Mais
                 </button>
             </div>
+
+            <div id="scroll"></div>
 
             <div class="qualidadeArtigo2P">
                 <p>A qualidade de software não se limita apenas à ausência de defeitos, mas também engloba características como eficiência, usabilidade, confiabilidade e segurança. Em seu livro "Software Engineering: A Practitioner's Approach", Roger S. Pressman ressalta que "a qualidade de software é uma medida da conformidade de um produto de software com seus requisitos funcionais e de desempenho, suportada por processos e padrões de desenvolvimento claramente definidos."</p>
@@ -46,7 +55,7 @@
                 <p>Para alcançar altos níveis de qualidade, as organizações devem adotar práticas de engenharia de software robustas, incluindo a definição clara de requisitos, o uso de metodologias de desenvolvimento estruturadas e a implementação de rigorosos processos de garantia de qualidade.</p>    
             </div>
 
-        </div>
+    </div>
 
 
 
@@ -140,27 +149,30 @@
 
    </div>
 
-    <div class="vidaSoftware">
-        <div class="vidaSoftwareH">
-            <h1>Ciclos de Vida de Software</h1>
-        </div>
+   <section class="vidaSoftwareSec" style="height: 100vh;">
+        <div class="vidaSoftware">
+            <div class="vidaSoftwareH">
+                <h1>Ciclos de Vida de Software</h1>
+            </div>
 
-        <div class="vidaSoftwareP">
-            <p>Os ciclos de vida de software descrevem as fases pelas quais um produto de software passa, desde sua concepção até sua desativação. Como destacado por Barry Boehm, um dos pioneiros no campo da engenharia de software, "os modelos de ciclo de vida do software ajudam a gerenciar o processo de desenvolvimento, garantindo que os processos corretos sejam aplicados nas fases apropriadas."</p>
-    
-            <p>Existem vários modelos de ciclo de vida, cada um com suas próprias características e abordagens. O modelo cascata, por exemplo, segue uma abordagem sequencial, com cada fase dependendo da conclusão da fase anterior. Em contraste, o modelo ágil enfatiza a adaptação contínua e a entrega incremental de funcionalidades, permitindo uma maior flexibilidade e resposta às mudanças nos requisitos do cliente.</p>    
-        </div>
+            <div class="vidaSoftwareP">
+                <p class="flexP">Os ciclos de vida de software descrevem as fases pelas quais um produto de software passa, desde sua concepção até sua desativação. Como destacado por Barry Boehm, um dos pioneiros no campo da engenharia de software, "os modelos de ciclo de vida do software ajudam a gerenciar o processo de desenvolvimento, garantindo que os processos corretos sejam aplicados nas fases apropriadas."</p>
         
-        <div class="vidaSoftwareIMG">
-            <img src="assets\Ilustração mostrando o processo de prototipagem de software para visualização e validação dos requisitos..png" alt="Ilustração mostrando o processo de prototipagem de software para visualização e validação dos requisitos">
+                <p class="flexP2">Existem vários modelos de ciclo de vida, cada um com suas próprias características e abordagens. O modelo cascata, por exemplo, segue uma abordagem sequencial, com cada fase dependendo da conclusão da fase anterior. Em contraste, o modelo ágil enfatiza a adaptação contínua e a entrega incremental de funcionalidades, permitindo uma maior flexibilidade e resposta às mudanças nos requisitos do cliente.</p>    
+            </div>
+            
+            <div class="vidaSoftwareIMG">
+                <img src="assets\Ilustração mostrando o processo de prototipagem de software para visualização e validação dos requisitos..png" alt="Ilustração mostrando o processo de prototipagem de software para visualização e validação dos requisitos">
+            </div>
+
+
+            <div class="vidaSoftwareP2">
+                <p>Independentemente do modelo adotado, é essencial que as organizações compreendam as características e requisitos específicos do projeto para selecionar o ciclo de vida mais adequado.</p>    
+            </div>
+
         </div>
-
-
-        <div class="vidaSoftwareP2">
-            <p>Independentemente do modelo adotado, é essencial que as organizações compreendam as características e requisitos específicos do projeto para selecionar o ciclo de vida mais adequado.</p>    
-        </div>
-
-    </div>
+        <div style="position: absolute; width: 100%; height: 100%;"></div>
+   </section>
 
     <div class="testeSoftware">
         <div class="testeSoftwareH">
@@ -180,43 +192,70 @@
     
     </div>
 
-    <div class="testCards">
 
-        <div class="testUnidade">
-            <h2>Teste de Unidade</h2>
-
-            <div class="containerP">
-                <p>O teste de unidade é a primeira fase do teste de software e envolve a verificação das partes individuais do código, conhecidas como unidades. Uma unidade pode ser uma função, um método ou uma classe. O objetivo principal do teste de unidade é garantir que cada unidade do software funcione conforme o esperado, isoladamente dos outros componentes do sistema. Isso é alcançado através da criação de casos de teste que avaliam o comportamento de cada unidade em diferentes cenários e condições.</p>
-            </div>
-
-        </div>
-
-        <div class="testIntegra">
-            <h2>Teste de Integração</h2>
-    
-            <div class="containerP">
-                <p>O teste de integração é realizado após o teste de unidade e concentra-se na verificação da interação entre as diferentes unidades do software. O objetivo é garantir que os módulos individualmente testados funcionem corretamente quando integrados juntos. Durante o teste de integração, os desenvolvedores identificam e corrigem problemas de comunicação entre os componentes, garantindo a coesão e a colaboração adequadas entre eles.</p>
-            </div>
-        </div>
-    
-    
-        <div class="testSistema">
-            <h2>Teste de Sistema</h2>
-
-            <div class="containerP">
-                <p>O teste de sistema avalia o sistema como um todo, verificando se ele atende aos requisitos especificados e se funciona conforme esperado em um ambiente operacional. Este tipo de teste é conduzido em uma etapa avançada do ciclo de vida do desenvolvimento, após a conclusão do teste de unidade e integração. Ele inclui testes de funcionalidade, desempenho, segurança e usabilidade, entre outros aspectos, para garantir que o sistema seja robusto e confiável.</p>
-            </div>
-        </div>
-    
-        <div class="testUser">
-            <h2>Teste de Aceitação do Usuário (UAT)</h2>
-    
-            <div class="containerP">
-                <p>O teste de aceitação do usuário é conduzido pelos próprios usuários finais ou representantes deles para avaliar se o sistema atende aos requisitos de negócios e às expectativas do usuário. Este teste é geralmente realizado em um ambiente que simula as condições reais de uso do software. O principal objetivo do UAT é garantir que o sistema seja aceitável e útil para os usuários finais, antes de ser lançado em produção.</p>    
-            </div>
-        </div>
+    <section class="sliderSec">
+        <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                  <ul class="splide__list">
         
-    </div>
+        
+                      <li class="splide__slide">
+                        <div class="testUnidade">
+                            <h2>Teste de Unidade</h2>
+                    
+                            <div class="containerP">
+                                <p>O teste de unidade é a primeira fase do teste de software e envolve a verificação das partes individuais do código, conhecidas como unidades. Uma unidade pode ser uma função, um método ou uma classe. O objetivo principal do teste de unidade é garantir que cada unidade do software funcione conforme o esperado, isoladamente dos outros componentes do sistema. Isso é alcançado através da criação de casos de teste que avaliam o comportamento de cada unidade em diferentes cenários e condições.</p>
+                            </div>
+                    
+                        </div>
+                      </li>
+        
+        
+                      <li class="splide__slide">
+                        <div class="testIntegra">
+                            <h2>Teste de Integração</h2>
+                    
+                            <div class="containerP">
+                                <p>O teste de integração é realizado após o teste de unidade e concentra-se na verificação da interação entre as diferentes unidades do software. O objetivo é garantir que os módulos individualmente testados funcionem corretamente quando integrados juntos. Durante o teste de integração, os desenvolvedores identificam e corrigem problemas de comunicação entre os componentes, garantindo a coesão e a colaboração adequadas entre eles.</p>
+                            </div>
+                        </div>
+                      </li>
+        
+        
+                      <li class="splide__slide">
+                        <div class="testSistema">
+                            <h2>Teste de Sistema</h2>
+                    
+                            <div class="containerP">
+                                <p>O teste de sistema avalia o sistema como um todo, verificando se ele atende aos requisitos especificados e se funciona conforme esperado em um ambiente operacional. Este tipo de teste é conduzido em uma etapa avançada do ciclo de vida do desenvolvimento, após a conclusão do teste de unidade e integração. Ele inclui testes de funcionalidade, desempenho, segurança e usabilidade, entre outros aspectos, para garantir que o sistema seja robusto e confiável.</p>
+                            </div>
+                        </div>
+                      </li>
+        
+                      <li class="splide__slide">
+                        <div class="testUser">
+                            <h2>Teste de Aceitação do Usuário (UAT)</h2>
+                    
+                            <div class="containerP">
+                                <p>O teste de aceitação do usuário é conduzido pelos próprios usuários finais ou representantes deles para avaliar se o sistema atende aos requisitos de negócios e às expectativas do usuário. Este teste é geralmente realizado em um ambiente que simula as condições reais de uso do software. O principal objetivo do UAT é garantir que o sistema seja aceitável e útil para os usuários finais, antes de ser lançado em produção.</p>    
+                            </div>
+                        </div>
+                      </li>
+        
+        
+                  </ul>
+            </div>
+          </div>
+          <script>
+            var splide = new Splide( '.splide', {
+            type   : 'loop',
+            padding: '5rem',
+            } );
+        
+            splide.mount();
+          </script>
+    </section>
+
 
     <div class="finalP">
         <p>Cada tipo de teste tem seu próprio objetivo e foco, contribuindo para a detecção eficaz de diferentes tipos de falhas ao longo do ciclo de vida do desenvolvimento de software. A combinação e a sequência adequadas desses métodos de teste são essenciais para garantir a qualidade e a confiabilidade do produto final.</p>
