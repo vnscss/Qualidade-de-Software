@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
     <title>Qualidade de Software</title>
     <link rel="shortcut icon" href="./assets/1945940.png" type="image/x-icon">
-</head>
-<body>
     <link rel="stylesheet" href="style.css">
 
     <link rel="stylesheet" href="./slider/splide.min.css">
     <script src="/slider/splide.min.js"></script>
 
-    <script src="./script.js"></script>
+</head>
+<body>
+    <script defer src="./script.js"></script>
 
     <script src="./scroll.js"></script>
 
@@ -247,12 +248,10 @@
             </div>
           </div>
           <script>
-            var splide = new Splide( '.splide', {
-            type   : 'loop',
-            padding: '5rem',
+            document.addEventListener( 'DOMContentLoaded', function() {
+                var splide = new Splide( '.splide' );
+                splide.mount();
             } );
-        
-            splide.mount();
           </script>
     </section>
 
